@@ -1,0 +1,198 @@
+img {
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(72, 106, 68);
+    max-width: 1200px;
+}
+
+header {
+    background-color: rgb(72, 106, 68);
+    height: 0;
+}
+
+html {
+    font-size: 18px;
+}
+
+section {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: rgb(72, 106, 68);
+}
+
+
+
+/* hjemmsidens gennerale fonte*/
+@font-face {
+    font-family: 'frutigernextlt-light-webfont';
+    src: url(font/frutigernextlt-light-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'keepcalm-webfont';
+    src: url('fonts/keepcalm-webfont.woff2') format('woff2'), url('fonts/keepcalm-webfont.woff.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+h1 {}
+
+
+h2 {
+    font-family: 'keepcalm-webfont';
+    color: black;
+    font-size: 4rem;
+    text-transform: uppercase;
+    padding-top: 60px;
+}
+
+h3 {}
+
+p {
+    font-family: "frutigernextlt-light-webfont";
+}
+
+
+/*menu fane og dens design*/
+
+nav {
+    padding: 1rem;
+    float: right;
+    /*    teksten skrives med stort*/
+    text-transform: uppercase;
+
+
+    /*for at få menuen til at stå under hinanden */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 50vh;
+    margin-top: 2%;
+}
+
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-family: 'keepcalm-webfont';
+    margin-right: 17px;
+}
+
+a:hover {
+    color: rgb(233, 179, 54);
+}
+
+
+/*Fotteren og dens design*/
+
+#fotter_section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 1fr;
+    height: auto;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+    grid-gap: 20px;
+
+}
+
+#fotter_section .kontakt {
+    grid-column-start: 1;
+    grid-column-end: span 1;
+    grid-row-start: 1;
+    grid-row-end: span 1;
+
+}
+
+#fotter_section .adresse {
+    grid-column-start: 2;
+    grid-column-end: span 2;
+    grid-row-start: 1;
+    grid-row-end: span 1;
+
+}
+
+#fotter_section .om_ingwersen {
+    grid-column-start: 1;
+    grid-column-end: span 1;
+    grid-row-start: 2;
+    grid-row-end: span 2;
+}
+
+#fotter_section .sociale_medier {
+    grid-column-start: 2;
+    grid-column-end: span 2;
+    grid-row-start: 2;
+    grid-row-end: span 2;
+
+}
+
+#fotter_section .footer {
+    /*    text-decoration-line: underline;*/
+    line-height: 1.8;
+    border-bottom-style: solid;
+    border-bottom-color: #123b25;
+    color: aliceblue;
+}
+
+.footer_h3 {
+    color: aliceblue;
+}
+
+
+
+@media only screen and (min-width: 600px) {
+    nav {
+        display: block;
+    }
+
+    #fotter_section {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        /*
+        height: auto;
+        width: auto;
+*/
+        margin-left: 100px;
+        margin-right: 100px;
+        grid-column-gap: 10px;
+    }
+
+    #fotter_section .kontakt {
+        grid-column-start: 1;
+        grid-column-end: span 1;
+        grid-row-start: 1;
+        grid-row-end: span 1;
+    }
+
+    #fotter_section .adresse {
+        grid-column-start: 2;
+        grid-column-end: span 2;
+        grid-row-start: 1;
+        grid-row-end: span 1;
+    }
+
+    #fotter_section .om_ingwersen {
+        grid-column-start: 3;
+        grid-column-end: span 3;
+        grid-row-start: 1;
+        grid-row-end: span 1;
+    }
+
+    #fotter_section .sociale_medier {
+        grid-column-start: 4;
+        grid-column-end: span 4;
+        grid-row-start: 1;
+        grid-row-end: span 1;
+    }
+
+
+}
