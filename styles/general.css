@@ -2,94 +2,209 @@ img {
     width: 100%;
 }
 
+nav {
+    z-index: 20;
+}
+
 body {
     margin: 0;
     padding: 0;
-    background-color: rgb(72, 106, 68);
-    max-width: 1200px;
+    background-color: rgba(157, 163, 154, 0.65);
 }
 
 header {
-    background-color: rgb(72, 106, 68);
-    height: 0;
+    background-color: #111A0C;
+    height: 100px;
+
 }
+
+footer {
+    background-color: #111A0C;
+    height: auto;
+}
+
 
 html {
     font-size: 18px;
 }
 
 section {
-    max-width: 1200px;
     margin: 0 auto;
-    background-color: rgb(72, 106, 68);
+    max-width: 1200px;
+    margin-top: 50px;
 }
 
 
 
-/* hjemmsidens gennerale fonte*/
+/* hjemmsidens gennerale fonte til de forskellige overskrifter og brødtekst*/
+/*
 @font-face {
     font-family: 'frutigernextlt-light-webfont';
     src: url(font/frutigernextlt-light-webfont.woff) format('woff');
     font-weight: normal;
     font-style: normal;
 }
+*/
 
-@font-face {
-    font-family: 'keepcalm-webfont';
-    src: url('fonts/keepcalm-webfont.woff2') format('woff2'), url('fonts/keepcalm-webfont.woff.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+
+h1 {
+    font-family: 'Ibarra Real Nova', serif;
+    color: black;
+    font-size: 3rem;
 }
-
-
-h1 {}
-
 
 h2 {
-    font-family: 'keepcalm-webfont';
+    font-family: 'Ibarra Real Nova', serif;
     color: black;
-    font-size: 4rem;
-    text-transform: uppercase;
-    padding-top: 60px;
+    font-size: 1.7rem;
 }
 
-h3 {}
+h3 {
+    font-family: 'Ibarra Real Nova', serif;
+    color: black;
+    font-size: 1.3rem;
+}
 
 p {
-    font-family: "frutigernextlt-light-webfont";
+    font-family: 'Titillium Web', sans-serif;
+    color: black;
 }
 
 
 /*menu fane og dens design*/
 
-nav {
-    padding: 1rem;
-    float: right;
-    /*    teksten skrives med stort*/
-    text-transform: uppercase;
 
+.hidden {
+    opacity: 0;
+    /*    transform: translateX(100%);*/
+    cursor: pointer;
+}
 
-    /*for at få menuen til at stå under hinanden */
+#menuknap_wrapper {
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 50vh;
-    margin-top: 2%;
+    justify-content: flex-end;
+    /*    width: 100%;*/
+    padding-right: 40px;
+    padding-top: 20px;
+}
+
+
+
+#menuknap {
+    display: inline-block;
+    /*    float: right;*/
+    /*
+    padding-right: 40px;
+    padding-top: 40px;
+*/
+
+}
+
+#menu {
+    list-style-type: none;
+    /*    transition: transfrom 10s;*/
+    /*    transform-origin: top right;*/
+    /*        float: right;*/
+    display: block;
+}
+
+#menu li {
+    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-right: 50px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    text-align: right;
+    background-color: #111A0C;
 }
 
 a {
     color: rgb(255, 255, 255);
     text-decoration: none;
     font-family: 'keepcalm-webfont';
-    margin-right: 17px;
 }
+
 
 a:hover {
-    color: rgb(233, 179, 54);
+    color: #809E4F;
 }
 
 
-/*Fotteren og dens design*/
+/* ------- burgermenu icon -----------*/
+.bar1,
+.bar2,
+.bar3 {
+    width: 34px;
+    height: 5px;
+    background-color: #f5faff;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+
+
+/*
+.hidden {
+    opacity: 0;
+    transform: translateX(100%);
+}
+
+#menuknap {
+    display: inline-block;
+    float: right;
+    padding-right: 40px;
+    padding-top: 40px;
+}
+
+#menu {
+    list-style-type: none;
+    transition: transfrom 10s;
+    transform-origin: top right;
+    float: right;
+
+}
+
+#menu li {
+    padding-left: 550px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    text-align: right;
+    background-color: #111A0C;
+
+}
+
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-family: 'keepcalm-webfont';
+}
+
+
+a:hover {
+    color: #809E4F;
+}
+
+*/
+
+
+
+
+/*----------Fotteren og dens design--------------*/
 
 #fotter_section {
     display: grid;
@@ -98,9 +213,8 @@ a:hover {
     height: auto;
     margin-left: 50px;
     margin-right: 50px;
-    margin-bottom: 20px;
     grid-gap: 20px;
-
+    background-color: #111A0C;
 }
 
 #fotter_section .kontakt {
@@ -108,7 +222,6 @@ a:hover {
     grid-column-end: span 1;
     grid-row-start: 1;
     grid-row-end: span 1;
-
 }
 
 #fotter_section .adresse {
@@ -116,7 +229,6 @@ a:hover {
     grid-column-end: span 2;
     grid-row-start: 1;
     grid-row-end: span 1;
-
 }
 
 #fotter_section .om_ingwersen {
@@ -131,40 +243,62 @@ a:hover {
     grid-column-end: span 2;
     grid-row-start: 2;
     grid-row-end: span 2;
-
 }
 
 #fotter_section .footer {
     /*    text-decoration-line: underline;*/
     line-height: 1.8;
     border-bottom-style: solid;
-    border-bottom-color: #123b25;
-    color: aliceblue;
+    border-bottom-color: #373e33;
+    color: #f5faff;
 }
 
 .footer_h3 {
-    color: aliceblue;
+    color: #f5faff;
+
 }
+
+
+
+
 
 
 
 @media only screen and (min-width: 600px) {
-    nav {
-        display: block;
+
+    #menuknap {
+        display: none;
     }
 
+    #menu.hidden {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    #menu li {
+        display: inline-block;
+        padding-left: 10px;
+        padding-right: 40px;
+        padding-bottom: 20px;
+        padding-top: 10px;
+        box-shadow: none;
+    }
+
+
+    nav {
+        display: block;
+        text-align: right;
+    }
+
+
     #fotter_section {
-        display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr;
-        /*
-        height: auto;
-        width: auto;
-*/
         margin-left: 100px;
         margin-right: 100px;
-        grid-column-gap: 10px;
+        grid-gap: 40px;
     }
+
 
     #fotter_section .kontakt {
         grid-column-start: 1;
@@ -173,26 +307,27 @@ a:hover {
         grid-row-end: span 1;
     }
 
+
     #fotter_section .adresse {
         grid-column-start: 2;
-        grid-column-end: span 2;
+        grid-column-end: span 1;
         grid-row-start: 1;
         grid-row-end: span 1;
     }
+
 
     #fotter_section .om_ingwersen {
         grid-column-start: 3;
-        grid-column-end: span 3;
+        grid-column-end: span 1;
         grid-row-start: 1;
         grid-row-end: span 1;
     }
+
 
     #fotter_section .sociale_medier {
         grid-column-start: 4;
-        grid-column-end: span 4;
+        grid-column-end: span 1;
         grid-row-start: 1;
         grid-row-end: span 1;
     }
-
-
 }

@@ -7,34 +7,117 @@
     <meta name="robots" content="noindex">
     <title>Redesign af hjemmeside</title>
     <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/forside.css">
+
+
+    <link rel="icon" type="image/png" sizes="16x16" href="icon_logo/icon_browser.png">
+
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@500&display=swap" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
     <header>
         <nav>
-            <a href="forside.html">Forside</a>
-            <a href="produkt.html">Produkt</a>
-            <a href="omos.html">Om os</a>
-            <a href="kontakt.html">Kontakt</a>
-            <a href="logind-section">Logind</a>
-
+            <div id="menuknap_wrapper">
+                <div id="menuknap">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+            <ul id="menu" class="hidden">
+                <li><a href="forside.html">Forside</a></li>
+                <li><a href="produkt.html">Produkt</a></li>
+                <li><a href="omos.html">Om os</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="logind-section">Logind</a></li>
+            </ul>
         </nav>
     </header>
 
     <main>
-        <h1>hhd</h1>
-        <h1>hhd</h1>
-        <h1>hhd</h1>
-        <h1>hhd</h1>
-        <h1>hhd</h1>
-        <h1>hhd</h1>
-        <h1>titel</h1>
-        <h1>hhd</h1>
-        <h1>hhd</h1>
-        <h1>hhd</h1>
-        <h1>hhd</h1>
-        <h2>Subtitel</h2>
+        <section id="splach">
+            <div class="section_wrapper">
+                <h1>Ingwersen</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic incidunt eveniet illum ipsum sunt ullam, alias! Tempore doloribus, nam aspernatur, temporibus libero nesciunt maxime, saepe eligendi, ut voluptates facilis animi.</p>
+            </div>
+        </section>
+
+        <section id="">
+            <!--            hvordan skal man gøre når man skal have et billede ind i baggrunden-->
+        </section>
+
+        <section id="proces">
+            <div class="section_wrapper">
+                <div id="finder" class="col">
+                    <div class="top">
+                        <h3>Vi finder</h3>
+                    </div>
+                    <div class="bottom"></div>
+                </div>
+
+                <div id="pakker" class="col">
+                    <div class="top">
+                        <h3>Vi pakker</h3>
+                    </div>
+                    <div class="bottom"></div>
+                </div>
+
+                <div id="levere" class="col">
+                    <div class="top">
+                        <h3>Vi levere</h3>
+                    </div>
+                    <div class="bottom"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="nyhed">
+            <div class="section_wrapper">
+                <div class="col_left">
+                    <div class="top">
+                        <h2>Tilmeld dig nyhedsbrev</h2>
+                    </div>
+                    <div class="bottom">
+                        <article>
+                            <h2>Nyhedsbrev</h2>
+                            <p>Gå ikke glip af noget. Hold dig opdaterede på nyheder og informationer gennem Ingwersen nyhedsbrev. </p>
+                        </article>
+
+                        <!-- Form HTML -->
+                        <form action="tak.html" name="kontakt" netlify>
+                            <div class="form-felt">
+                                <label>
+                                    Fulde navn
+                                    <input placeholder="Indtast dit navn" type="text" name="fnavn" required>
+                                </label>
+                            </div>
+
+                            <div class="form-felt">
+                                <label>
+                                    E-mail
+                                    <input placeholder="Indtast din E-mail" name="email" type="email" required>
+                                </label>
+                            </div>
+                            <button>Tilmeld mig</button>
+                        </form>
+
+                    </div>
+                </div>
+                <div class="col_right">
+                    <h2> video</h2>
+                    <!--                    der skal indsættets en video-->
+                </div>
+            </div>
+        </section>
+
 
     </main>
 
@@ -51,7 +134,7 @@
             <div class="adresse">
                 <h3 class="footer_h3">Adresse</h3>
                 <p class="footer">Hørskætten 30</p>
-                <p class="footer">2630 Taastrup, København</p>
+                <p class="footer">2630 Taastrup</p>
                 <p class="footer">Danmark</p>
             </div>
 
@@ -65,10 +148,16 @@
             <div class="sociale_medier">
                 <h3 class="footer_h3">Sociale medier</h3>
                 <p class="footer">Instagrame</p>
+                <p class="footer">Facebook</p>
             </div>
         </section>
     </footer>
-    <script src=""></script>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
+
+
+
+<!--<a href="index.html"> <img src="icon/favicon-32x32.png" alt="To bobler med huse i"></a>-->

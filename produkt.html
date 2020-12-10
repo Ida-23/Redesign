@@ -7,17 +7,30 @@
     <title>Redesign af hjemmeside</title>
     <link rel="stylesheet" href="styles/general.css">
     <link rel="stylesheet" href="styles/produkt.css">
+
+
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@500&display=swap" rel="stylesheet">
+
+
 </head>
 
 <body>
     <header>
         <nav>
-            <a href="forside.html">Forside</a>
-            <a href="produkt.html">Produkt</a>
-            <a href="omos.html">Om os</a>
-            <a href="kontakt.html">Kontakt</a>
-            <a href="logind-section">Logind</a>
-
+            <div id="menuknap" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <ul id="menu" class="hidden">
+                <li><a href="forside.html">Forside</a></li>
+                <li><a href="produkt.html">Produkt</a></li>
+                <li><a href="omos.html">Om os</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="logind-section">Logind</a></li>
+            </ul>
         </nav>
     </header>
 
@@ -39,7 +52,7 @@
             <div class="adresse">
                 <h3 class="footer_h3">Adresse</h3>
                 <p class="footer">Hørskætten 30</p>
-                <p class="footer">2630 Taastrup, København</p>
+                <p class="footer">2630 Taastrup</p>
                 <p class="footer">Danmark</p>
             </div>
 
@@ -53,11 +66,12 @@
             <div class="sociale_medier">
                 <h3 class="footer_h3">Sociale medier</h3>
                 <p class="footer">Instagrame</p>
+                <p class="footer">Facebook</p>
             </div>
         </section>
     </footer>
 
-    <script src=""></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
