@@ -8,7 +8,6 @@ nav {
 
 body {
     margin: 0;
-    padding: 0;
     background-color: rgba(157, 163, 154, 0.65);
 }
 
@@ -22,7 +21,6 @@ footer {
     height: auto;
 }
 
-
 html {
     font-size: 18px;
 }
@@ -30,7 +28,6 @@ html {
 section {
     margin: 0 auto;
     max-width: 1200px;
-    margin-top: 50px;
 }
 
 
@@ -149,54 +146,6 @@ a:hover {
 
 
 
-/*
-.hidden {
-    opacity: 0;
-    transform: translateX(100%);
-}
-
-#menuknap {
-    display: inline-block;
-    float: right;
-    padding-right: 40px;
-    padding-top: 40px;
-}
-
-#menu {
-    list-style-type: none;
-    transition: transfrom 10s;
-    transform-origin: top right;
-    float: right;
-
-}
-
-#menu li {
-    padding-left: 550px;
-    padding-right: 50px;
-    padding-bottom: 20px;
-    padding-top: 10px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    text-align: right;
-    background-color: #111A0C;
-
-}
-
-a {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    font-family: 'keepcalm-webfont';
-}
-
-
-a:hover {
-    color: #809E4F;
-}
-
-*/
-
-
-
-
 /*----------Fotteren og dens design--------------*/
 
 #fotter_section {
@@ -208,6 +157,10 @@ a:hover {
     margin-right: 50px;
     grid-gap: 20px;
     background-color: #111A0C;
+}
+
+#fotter_section p {
+    font-size: 15px;
 }
 
 #fotter_section .kontakt {
@@ -287,6 +240,10 @@ a:hover {
     }
 
     /*-----------footer design ---------*/
+
+    #fotter_section p {
+        font-size: 18px;
+    }
 
     #fotter_section {
         grid-template-columns: 1fr 1fr 1fr 1fr;
