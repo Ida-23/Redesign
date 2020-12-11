@@ -1,9 +1,22 @@
+/*oplysninger*/
+
+#oplysninger .section_wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 10px;
+    margin: 10px;
+    padding: 10px;
+}
+
+/*oplysninger*/
+
+
 /*Forms*/
 
 .form_holder {
     background-color: rgba(157, 163, 154, 0.65);
     width: 550px;
-    height: 490px;
+    height: 420px;
     border-radius: 20px;
     padding: 20px;
 }
@@ -19,6 +32,11 @@ button {
 }
 .form-felt {
     margin: 10px;
+}
+label {
+    font-family: 'Ibarra Real Nova', serif;
+    font-size: 1.2rem;
+    color: black;
 }
 input {
     border-radius: 5px;
@@ -36,7 +54,7 @@ textarea {
     box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.20) inset;
     color: #666666;
     width: 450px;
-    height: 200px;
+    height: 100px;
     line-height: 30px;
     margin-bottom: 10px;
     border: 0;
@@ -57,5 +75,52 @@ textarea {
 button:hover {
     color: #809E4F;
 }
+tr {
+    font-family: 'Titillium Web', sans-serif;
+    color: black;
+}
+table {
+    width: 300px;
+    height: 20px;
+}
+h1 {
+    margin: 10px;
+    margin-left: 150px;
+}
+
+/*Forms*/
+
+
+/*google*/
+
+iframe {
+    width: 1200px;
+    height: 350px;
+    border: 0;
+}
+
+/*google*/
+
+
+/*Forms*/
+
+
+/*Forms*/
+
+
+/*Forms*/
+
+
+/*Forms*/
+
+
+/*Forms*/
+
+
+/*Forms*/
+
+
+/*Forms*/
+
 
 /*Forms*/
