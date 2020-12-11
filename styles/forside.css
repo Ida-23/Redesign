@@ -1,44 +1,81 @@
+/*------------- billede i baggrunden --------------*/
+
+body {
+    background: url(../billeder/chili_baggrund.png) no-repeat fixed top;
+}
+
+
+/*------------splach sketionen ---------*/
+
 #splach {
     max-width: none;
     width: 100%;
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-auto-rows: 1fr 1fr 1fr;
-
+    background-image: url(../billeder/splachbillede.jpg);
     background-size: cover;
-    background-position: center;
-    max-width: 1200px;
+    background-position: 55% 10%;
 }
-
 
 #splach .section_wrapper {
     grid-column-start: 2;
     grid-column-end: span 1;
-    grid-row-start: 1;
-    grid-row-end: span 1;
-
     text-align: right;
-    color: white;
-    margin-bottom: 4vw;
+    padding: 70px 20px;
 }
 
-#splachimg {
-    background-size: cover;
-    position: absolute;
-    z-index: -1;
-    margin-top: 0;
-    padding-top: 0;
+#splach .section_wrapper h1,
+p {
+    color: #f5faff;
+    padding-right: 20px;
 }
-
 
 
 /*--------------  proces sketionen ----------------*/
 
-#proces .section_wrapper .col {
-    text-align: center;
+#proces {
+    background-image: url(../forside_billeder/bagrundsfarve.png);
+    background-size: cover;
+    max-width: none;
+    width: 100%;
+    height: 100vh;
 }
 
+
+#proces .section_wrapper {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+#proces .section_wrapper .col {
+    text-align: center;
+    margin-top: auto;
+    padding: 30px 30px;
+}
+
+
+#proces img {
+    width: 80%;
+
+}
+
+#proces #finder {
+    padding-right: 20px;
+    border-bottom: 3px solid #111A0C;
+
+}
+
+#proces #pakker {
+    padding-right: 10px;
+    padding-left: 10px;
+    border-bottom: 3px solid #111A0C;
+}
+
+#proces #lavere {
+    padding-left: 20px;
+}
 
 /*---------- nyhed skaltionen -------------------*/
 
@@ -92,12 +129,31 @@ button:hover {
 
 @media only screen and (min-width: 600px) {
 
+    #splach .section_wrapper {
+        padding-right: 40px;
+
+    }
+
+    #splach .section_wrapper h1 {
+        font-size: 5em;
+        margin-right: 0;
+    }
+
+
+    #splach {
+        width: 100vw;
+        height: 100vh;
+    }
+
+
+
     /*--------------  proces sketionen ----------------*/
     #proces .section_wrapper {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         column-gap: 10px;
-        padding: 10px;
+
+        padding-top: 120px;
     }
 
 
@@ -105,21 +161,31 @@ button:hover {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        padding: 70px 30px;
+
     }
 
     #proces #finder {
         padding-right: 20px;
+        border-right: 3px solid #111A0C;
+        border-bottom: 0;
     }
 
     #proces #pakker {
         padding-right: 10px;
         padding-left: 10px;
+        border-right: 3px solid #111A0C;
+        border-bottom: 0;
     }
 
     #proces #lavere {
         padding-left: 20px;
     }
 
+    #proces img {
+        width: 100%;
+
+    }
 
 
     /*---------- nyhed skaltionen -------------------*/
