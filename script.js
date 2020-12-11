@@ -11,6 +11,7 @@ function toggleMenu() {
     document.querySelector("#menu").classList.toggle("hidden");
     myFunction(this);
 
+    // this henvender sig til menuknappen. Så når man killer på menuknappen, kalder den både togglemenu og myFuncking. Har skrvet nyfincken (this) her for at den så også går med og kalder funktionen nedenunder
 }
 
 function myFunction(x) {
