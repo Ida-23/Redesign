@@ -25,7 +25,7 @@ body {
     padding: 70px 20px;
 }
 
-#splach .section_wrapper h1,
+#splach h1,
 p {
     color: #f5faff;
     padding-right: 20px;
@@ -42,6 +42,13 @@ p {
     height: 100vh;
 }
 
+#proces h1 {
+    text-align: center;
+    color: #f5faff;
+    padding-top: 10px;
+    margin-top: 0;
+    font-size: 29px;
+}
 
 #proces .section_wrapper {
     padding-left: 30px;
@@ -55,15 +62,15 @@ p {
     padding: 30px 30px;
 }
 
-
 #proces img {
-    width: 80%;
+    width: 60%;
 
 }
 
 #proces #finder {
     padding-right: 20px;
     border-bottom: 3px solid #111A0C;
+    padding-top: 0;
 
 }
 
@@ -77,12 +84,22 @@ p {
     padding-left: 20px;
 }
 
+
+
+
 /*---------- nyhed skaltionen -------------------*/
 
-#nyhed .bottom {
+#nyhed .section_wrapper {
+    margin-top: 300px;
+    margin-bottom: 150px;
     background: rgba(157, 163, 154, 0.65);
     border-radius: 20px;
+}
+
+
+#nyhed .bottom {
     padding: 20px;
+    border-right: 3px solid #111A0C;
 }
 
 .form-felt {
@@ -106,6 +123,7 @@ input {
     padding-right: 7rem;
     border-radius: 4px;
     border: 0;
+    background-color: #f5faff;
 }
 
 button {
@@ -123,6 +141,13 @@ button {
 
 button:hover {
     color: #809E4F;
+}
+
+
+
+#nyhed .col_right {
+    padding: 20px;
+    border-left: 3px solid #111A0C;
 }
 
 
@@ -152,38 +177,41 @@ button:hover {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         column-gap: 10px;
-
-        padding-top: 120px;
+        padding-top: 10px;
     }
 
+    #proces h1 {
+        text-align: center;
+        color: #f5faff;
+        padding-top: 120px;
+        font-size: 3rem;
+
+    }
 
     #proces .section_wrapper .col {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         padding: 70px 30px;
-
     }
 
     #proces #finder {
-        padding-right: 20px;
         border-right: 3px solid #111A0C;
         border-bottom: 0;
     }
 
     #proces #pakker {
-        padding-right: 10px;
-        padding-left: 10px;
         border-right: 3px solid #111A0C;
         border-bottom: 0;
+        padding-top: 0;
     }
 
-    #proces #lavere {
-        padding-left: 20px;
+    #levere {
+        padding-top: 0;
     }
 
     #proces img {
-        width: 100%;
+        width: 80%;
 
     }
 
@@ -197,5 +225,8 @@ button:hover {
 
     }
 
+    #nyhed p {
+        color: black;
+    }
 
 }
