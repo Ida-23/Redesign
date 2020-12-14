@@ -33,6 +33,8 @@ form.search input[type=text] {
     float: left;
     width: 200px;
     background: #f1f1f1;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 0.75rem;
 }
 
 /* Style the submit button */
