@@ -1,5 +1,6 @@
 img {
     width: 100%;
+    height: auto;
 }
 
 nav {
@@ -205,8 +206,6 @@ a:hover {
     color: #f5faff;
 
 }
-
-
 
 
 
