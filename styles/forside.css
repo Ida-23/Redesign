@@ -25,11 +25,12 @@ body {
     padding: 70px 20px;
 }
 
-#splach .section_wrapper h1,
+#splach h1,
 p {
     color: #f5faff;
     padding-right: 20px;
 }
+
 
 
 /*--------------  proces sketionen ----------------*/
@@ -42,6 +43,13 @@ p {
     height: 100vh;
 }
 
+#proces h1 {
+    text-align: center;
+    color: #f5faff;
+    padding-top: 10px;
+    margin-top: 0;
+    font-size: 29px;
+}
 
 #proces .section_wrapper {
     padding-left: 30px;
@@ -55,35 +63,48 @@ p {
     padding: 30px 30px;
 }
 
-
 #proces img {
-    width: 80%;
+    width: 60%;
 
 }
 
 #proces #finder {
+    padding-top: 0;
     padding-right: 20px;
     border-bottom: 3px solid #111A0C;
-
 }
 
 #proces #pakker {
+    padding-top: 0;
     padding-right: 10px;
     padding-left: 10px;
     border-bottom: 3px solid #111A0C;
 }
 
 #proces #lavere {
+    padding-top: 0;
     padding-left: 20px;
+    margin-top: 0;
 }
+
+
 
 /*---------- nyhed skaltionen -------------------*/
 
-#nyhed .bottom {
+#nyhed .section_wrapper {
+    margin-top: 300px;
+    margin-bottom: 150px;
     background: rgba(157, 163, 154, 0.65);
-    border-radius: 20px;
-    padding: 20px;
+
 }
+
+
+#nyhed .bottom {
+    padding: 20px;
+    border-bottom: 3px solid #111A0C;
+}
+
+
 
 .form-felt {
     margin-bottom: 1rem;
@@ -106,13 +127,14 @@ input {
     padding-right: 7rem;
     border-radius: 4px;
     border: 0;
+    background-color: #f5faff;
 }
 
 button {
     padding: .75rem 1rem;
     margin-top: 1.1rem;
     border: 0;
-    border-radius: 10px;
+    border-radius: 100px;
     background: #111A0C;
     color: #f5faff;
     text-shadow: 0 0 6px rgb(0 0 0 / 40%);
@@ -127,22 +149,42 @@ button:hover {
 
 
 
+#nyhed .col_right {
+    padding: 20px;
+}
+
+
+
+video {
+    margin: 0;
+    height: auto;
+    width: 88vw;
+}
+
+
+
 @media only screen and (min-width: 600px) {
+
+
 
     #splach .section_wrapper {
         padding-right: 40px;
 
     }
 
-    #splach .section_wrapper h1 {
-        font-size: 5em;
-        margin-right: 0;
+    #splach_h1 {
+        font-size: 7rem;
+        margin-bottom: 0;
     }
 
 
     #splach {
         width: 100vw;
         height: 100vh;
+    }
+
+    #splach_p {
+        font-size: 25px;
     }
 
 
@@ -152,10 +194,16 @@ button:hover {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         column-gap: 10px;
-
-        padding-top: 120px;
+        padding-top: 10px;
     }
 
+    #proces h1 {
+        text-align: center;
+        color: #f5faff;
+        padding-top: 120px;
+        font-size: 3rem;
+
+    }
 
     #proces .section_wrapper .col {
         display: flex;
@@ -166,26 +214,26 @@ button:hover {
     }
 
     #proces #finder {
-        padding-right: 20px;
         border-right: 3px solid #111A0C;
         border-bottom: 0;
     }
 
     #proces #pakker {
-        padding-right: 10px;
-        padding-left: 10px;
         border-right: 3px solid #111A0C;
         border-bottom: 0;
+        padding-top: 0;
     }
 
-    #proces #lavere {
-        padding-left: 20px;
+    #levere {
+        padding-top: 0;
+
     }
 
     #proces img {
-        width: 100%;
+        width: 80%;
 
     }
+
 
 
     /*---------- nyhed skaltionen -------------------*/
@@ -194,8 +242,31 @@ button:hover {
         display: grid;
         grid-template-columns: 1fr 1fr;
         column-gap: 20px;
-
+        border-radius: 20px;
     }
 
+
+    #nyhed p {
+        color: black;
+    }
+
+    #nyhed .bottom {
+        border-right: 3px solid #111A0C;
+        border-bottom: none;
+    }
+
+    #nyhed .col_right {
+        padding: 59px 30px;
+        border-left: 3px solid #111A0C;
+        border-top: none;
+    }
+
+
+    video {
+        margin: 0;
+        height: auto;
+        width: 37vw;
+        border-radius: 4px;
+    }
 
 }

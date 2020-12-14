@@ -32,6 +32,8 @@ section {
 }
 
 
+
+
 /* hjemmsidens gennerale fonte til de forskellige overskrifter og brødtekst*/
 /*
 @font-face {
@@ -98,6 +100,7 @@ p {
 #menu {
     list-style-type: none;
     display: block;
+    margin-bottom: 0;
 }
 
 #menu li {
