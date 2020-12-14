@@ -57,7 +57,7 @@ form.search button:hover {
     background: #111A0C;
 }
 form {
-    margin-left: 40%;
+    margin-left: 25%;
 }
 
 /* Clear floats */
@@ -128,5 +128,8 @@ h2 {
     }
     h2 {
         text-align: left;
+    }
+    form {
+        margin-left: 40%;
     }
 }
