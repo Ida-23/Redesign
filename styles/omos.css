@@ -1,0 +1,142 @@
+a:hover {
+    color: #809E4F;
+
+}
+
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-family: 'keepcalm-webfont';
+}
+
+#ansat {
+    background-color: background: rgba(157, 163, 154, 0.68);
+    ;
+    position: relative;
+}
+
+#video .section_wrapper #videoBG {
+
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    margin-right: 10px;
+    z-index: -100;
+}
+
+#raavarer .section_wrapper {
+
+    border-radius: 25px;
+    background: #ebebe0;
+    padding: 20px;
+    align-content: center;
+
+}
+
+@media only screen and (min-width: 600px) {
+    #video .section_wrapper #videoBG {
+
+        width: 100%;
+        height: 100%;
+        margin: 40px;
+        object-fit: cover;
+        z-index: -100;
+
+    }
+
+
+    #ansat {
+        background-color: #111A0C;
+        max-width: none;
+        padding-left: 1133px;
+        padding-bottom: 20px;
+        font-size: 15px;
+
+    }
+
+    #ingwersen .section_wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-column-gap: 40px;
+        margin-top: 5px;
+    }
+
+    #ingwersen .section_wrapper .col_left {
+        display: grid;
+        grid-template-columns: 1fr;
+
+    }
+
+    #ingwersen .section_wrapper .col_right {
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+
+    }
+
+
+    #raavarer .section_wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-column-gap: 40px;
+        border-radius: 25px;
+        background: rgba(157, 163, 154, 0.68);
+        padding: 20px;
+        margin-top: 40px;
+    }
+
+    #raavarer .section_wrapper .col_left {
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    #raavarer .section_wrapper .col_right {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    #arbejde .section_wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-column-gap: 40px;
+        margin-bottom: 100px;
+
+
+
+    }
+
+    #arbejde .section_wrapper .col_left {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        text-align: center;
+
+    }
+
+    #arbejde .section_wrapper .col_right {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        text-align: center;
+
+    }
+
+
+
+    #arbejde .section_wrapper .col_right .bottom {
+        border-left: 3px solid #111A0C;
+        height: 450px;
+        padding-left: 10px;
+    }
+
+    #arbejde .section_wrapper .col_left .bottom {
+        border-right: 3px solid #111A0C;
+        height: 450px;
+        padding-right: 10px;
+
+    }
+}
