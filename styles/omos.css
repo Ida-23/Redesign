@@ -24,6 +24,12 @@ a {
     z-index: -100;
 }
 
+#medarbejdere .section_wrapper {
+    text-align: center;
+    margin: 10px;
+    margin-bottom: 40px;
+}
+
 #raavarer .section_wrapper {
 
     border-radius: 25px;
@@ -32,6 +38,7 @@ a {
     align-content: center;
 
 }
+
 
 @media only screen and (min-width: 600px) {
     #video .section_wrapper #videoBG {
