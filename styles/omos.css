@@ -44,6 +44,12 @@ a {
     padding-top: 15px;
 }
 
+#ingwersen .section_wrapper .col_left .image {
+    height: 414.55;
+    width: 570;
+}
+
+
 #medarbejdere .section_wrapper {
     text-align: center;
     margin: 10px;
