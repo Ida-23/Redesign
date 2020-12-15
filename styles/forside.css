@@ -1,7 +1,7 @@
 /*------------- billede i baggrunden --------------*/
 
 body {
-    background: url(../billeder/chili_baggrund.png) no-repeat fixed top;
+    background: url(../billeder/chili_baggrund_1.webp) no-repeat fixed top;
 }
 
 
@@ -13,7 +13,7 @@ body {
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-image: url(../billeder/splachbillede.jpg);
+    background-image: url(../billeder/splachbillede.webp);
     background-size: cover;
     background-position: 55% 10%;
 }

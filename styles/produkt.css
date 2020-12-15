@@ -18,6 +18,55 @@
     z-index: -1;
     width: 100%;
 }
+* {
+    box-sizing: border-box;
+}
+
+/* Style the search field */
+
+form.search input[type=text] {
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 200px;
+    background: #f1f1f1;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 0.75rem;
+}
+
+/* Style the submit button */
+
+form.search button {
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    float: left;
+    width: 40px;
+    padding: 10px;
+    background: #809E4F;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    /* Prevent double borders */
+    cursor: pointer;
+}
+form.search button:hover {
+    background: #111A0C;
+}
+form {
+    margin-left: 25%;
+}
+
+/* Clear floats */
+
+form.search::after {
+    content: "";
+    clear: both;
+    display: table;
+}
 #udvalg nav {
     position: relative;
     top: 100px;
@@ -25,6 +74,7 @@
     padding: 10px;
 }
 #vare {
+    margin-bottom: 150px;
     position: relative;
     top: 200px;
 }
@@ -65,7 +115,7 @@ h2 {
         z-index: 10;
         margin-left: auto;
         margin-right: auto;
-        top: 300px;
+        top: 270px;
     }
     #vare {
         position: relative;
@@ -78,5 +128,8 @@ h2 {
     }
     h2 {
         text-align: left;
+    }
+    form {
+        margin-left: 40%;
     }
 }
