@@ -26,7 +26,7 @@ section {
     }
 
     img {
-        width: 80%;
+        width: 100%;
     }
 
     h1 {
@@ -40,7 +40,7 @@ section {
 
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 15px;
-        padding-bottom: 40px;
+        padding-bottom: 100px;
     }
 
     #medarbejder_1 .section_wrapper .top {
@@ -56,7 +56,7 @@ section {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 15px;
-        padding-bottom: 40px;
+        padding-bottom: 100px;
 
     }
 
@@ -70,7 +70,7 @@ section {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 15px;
-        padding-bottom: 40px;
+        padding-bottom: 100px;
 
     }
 
@@ -84,7 +84,7 @@ section {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 10px;
-        padding-bottom: 40px;
+        padding-bottom: 100px;
     }
 
     #medarbejder_4 .section_wrapper .top {
@@ -98,7 +98,7 @@ section {
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 10px;
         margin-bottom: 150px;
-        padding-bottom: 40px;
+        padding-bottom: 100px;
 
     }
 
