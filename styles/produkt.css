@@ -9,19 +9,31 @@
     background-color: rgba(255, 255, 255, 0.49);
     width: 350px;
     text-align: center;
-    padding: 40px;
+    padding: 10px;
     margin: 10px;
     z-index: 10;
     margin-left: auto;
     margin-right: auto;
-    top: 80px;
+    top: 40px;
 }
+
+/*
 .video {
     margin-top: 23px;
     position: absolute;
     z-index: -1;
     height: 600px;
+    width: auto;
     clip: rect(0px, 600px, 600px, 0px);
+}
+*/
+
+.video {
+    margin-top: 23px;
+    position: absolute;
+    z-index: -1;
+    width: 375px;
+    clip: rect(0px, 375px, 600px, 0px);
 }
 * {
     box-sizing: border-box;
@@ -129,7 +141,7 @@ form.search::after {
     color: #f5faff;
 }
 #vare {
-    margin-bottom: 100px;
+    margin-bottom: 0px;
     position: relative;
     top: 200px;
 }
@@ -137,6 +149,7 @@ form.search::after {
     grid-gap: 10px;
     margin: 10px;
     padding: 10px;
+    margin-left: 40px
 }
 td {
     line-height: 1.8;
@@ -148,17 +161,19 @@ td {
     color: black;
 }
 .col {
-    padding-top: 10px;
-    padding-right: 10px;
-    border-left-style: solid;
-    border-left-color: #373e33;
-    border-right-style: solid;
-    border-right-color: #373e33;
+    padding-bottom: 40px;
+    border-bottom-style: solid;
+    border-bottom-color: #373e33;
+    border-top-style: solid;
+    border-top-color: #373e33;
     width: 270px;
 }
 footer {
     position: relative;
-    top: 500px;
+    top: 300px;
+}
+h1 {
+    font-size: 2.9rem;
 }
 h2 {
     margin: 10px;
@@ -173,6 +188,7 @@ h2 {
         grid-gap: 10px;
         margin: 10px;
         padding: 10px;
+        margin-left: 0px
     }
     .txt {
         position: relative;
@@ -184,7 +200,7 @@ h2 {
         z-index: 10;
         margin-left: auto;
         margin-right: auto;
-        top: 200px;
+        top: 250px;
     }
     .video {
         margin-top: 23px;
@@ -192,6 +208,9 @@ h2 {
         z-index: -1;
         width: 100%;
         clip: auto;
+    }
+    h1 {
+        font-size: 3rem;
     }
     h2 {
         margin: 10px;
@@ -202,6 +221,7 @@ h2 {
     #vare {
         position: relative;
         top: 400px;
+        margin-bottom: 100px;
     }
     #udvalg nav {
         position: relative;
@@ -219,6 +239,9 @@ h2 {
     border-left-color: #373e33;
     border-right-style: solid;
     border-right-color: #373e33;
+    border-bottom-style: hidden;
+    border-top-style: hidden;
+    width: 270px;
 }
 .dropdown:active .dropdown-content {
     display: block;
@@ -235,15 +258,6 @@ h2 {
 
 .dropdown-content a:active {
     color: #f5faff;
-}
-.col {
-    padding-left: 10px;
-    padding-right: 10px;
-    border-left-style: solid;
-    border-left-color: #373e33;
-    border-right-style: solid;
-    border-right-color: #373e33;
-    width: 270px;
 }
 footer {
     position: relative;
