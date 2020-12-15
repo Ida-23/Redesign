@@ -1,3 +1,14 @@
+.border_menu {
+    text-decoration: underline;
+    color: rgb(255, 255, 255);
+}
+
+.section_wrapper {
+    padding: 10px;
+    padding-bottom: 40px;
+
+}
+
 a:hover {
     color: #809E4F;
 
@@ -13,6 +24,7 @@ a {
 }
 
 #ansat {
+    padding-top: 20px;
     background-color: rgba(157, 163, 154, 0.68);
 
     position: relative;
@@ -25,18 +37,24 @@ a {
     margin: 0px;
     margin-right: 20px;
     z-index: -100;
+    padding-bottom: 10px;
+}
+
+#ingwersen .section_wrapper {
+    padding-top: 15px;
 }
 
 #medarbejdere .section_wrapper {
     text-align: center;
     margin: 10px;
     margin-bottom: 40px;
+
 }
 
 #raavarer .section_wrapper {
 
-    border-radius: 25px;
-    background: #ebebe0;
+    border-radius: 1px;
+    background: rgba(157, 163, 154, 0.68);
     padding: 20px;
     align-content: center;
 
@@ -46,6 +64,9 @@ p {
     line-height: 1.8;
 }
 
+#arbejde .section_wrapper {
+    padding-bottom: 100px;
+}
 
 @media only screen and (min-width: 600px) {
     #video .section_wrapper #videoBG {
