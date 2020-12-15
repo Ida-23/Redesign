@@ -40,13 +40,16 @@ section {
 
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 15px;
-        padding-bottom: 20px;
+        padding-bottom: 40px;
     }
 
     #medarbejder_1 .section_wrapper .top {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+
+
+
     }
 
     #medarbejder_2 .section_wrapper {
@@ -54,6 +57,7 @@ section {
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 15px;
         padding-bottom: 40px;
+
     }
 
     #medarbejder_2 .section_wrapper .top {
