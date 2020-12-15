@@ -62,7 +62,7 @@ form.search button:hover {
     background: #111A0C;
 }
 form {
-    margin-left: 20%;
+    margin-left: 17%;
 }
 
 /* Clear floats */
@@ -129,7 +129,7 @@ form.search::after {
     color: #f5faff;
 }
 #vare {
-    margin-bottom: 150px;
+    margin-bottom: 100px;
     position: relative;
     top: 200px;
 }
@@ -148,7 +148,7 @@ td {
     color: black;
 }
 .col {
-    padding-left: 10px;
+    padding-top: 10px;
     padding-right: 10px;
     border-left-style: solid;
     border-left-color: #373e33;
@@ -163,7 +163,7 @@ footer {
 h2 {
     margin: 10px;
     text-align: center;
-    padding-top: 150px;
+    padding-top: 10px;
     padding-bottom: 20px;
 }
 @media only screen and (min-width: 600px) {
@@ -235,4 +235,17 @@ h2 {
 
 .dropdown-content a:active {
     color: #f5faff;
+}
+.col {
+    padding-left: 10px;
+    padding-right: 10px;
+    border-left-style: solid;
+    border-left-color: #373e33;
+    border-right-style: solid;
+    border-right-color: #373e33;
+    width: 270px;
+}
+footer {
+    position: relative;
+    top: 500px;
 }
