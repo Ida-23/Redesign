@@ -28,6 +28,7 @@ a {
     background-color: rgba(157, 163, 154, 0.68);
 
     position: relative;
+    font-family: 'Titillium Web', sans-serif;
 }
 
 #video .section_wrapper #videoBG {
